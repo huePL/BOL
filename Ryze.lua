@@ -40,7 +40,7 @@ local AUTOUPDATE = true
 local obw_URL = "https://raw.githubusercontent.com/Superx321/BoL/master/common/SxOrbWalk.lua"
 local obw_PATH = LIB_PATH.."SxOrbwalk.lua"
 local UPDATE_HOST = "raw.github.com"
-local UPDATE_PATH = "/Celtech/BOL/master/Ryze.lua".."?rand="..math.random(1,10000)
+local UPDATE_PATH = "/huePL/BOL/master/Ryze.lua".."?rand="..math.random(1,10000)
 local UPDATE_FILE_PATH = SCRIPT_PATH..GetCurrentEnv().FILE_NAME
 local UPDATE_URL = "https://"..UPDATE_HOST..UPDATE_PATH
 local ScriptName = "[Cracked by fastzecheat.ga!]"
@@ -98,7 +98,7 @@ function _AutoupdaterMsg(msg)
 	print("<b><font color=\"#FF0000\">"..ScriptName.."</font><font color=\"#FFFFFF\"> "..msg.."</font>") 
 end
 if AUTOUPDATE then
-	local ServerData = GetWebResult(UPDATE_HOST, "/Celtech/BOL/master/ryze.version")
+	local ServerData = GetWebResult(UPDATE_HOST, "/huePL/BOL/master/ryze.version")
 	if ServerData then
 		ServerVersion = type(tonumber(ServerData)) == "number" and tonumber(ServerData) or nil
 		if ServerVersion then
